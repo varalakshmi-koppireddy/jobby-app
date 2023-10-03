@@ -93,7 +93,7 @@ class AboutJobItem extends Component {
 
   renderJobDetailsSuccessView = () => {
     const {jobsDataDetails, similarJobsData} = this.state
-    if (jobsDataDetails >= 1) {
+    if (jobsDataDetails.length >= 1) {
       const {
         companyLogoUrl,
         companyWebsiteUrl,

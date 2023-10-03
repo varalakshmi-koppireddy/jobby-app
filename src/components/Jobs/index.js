@@ -201,7 +201,7 @@ class Jobs extends Component {
   )
 
   onRenderProfileStatus = () => {
-    const {apiStatus} = this.State
+    const {apiStatus} = this.state
 
     switch (apiStatus) {
       case apiStatusConstants.success:
@@ -261,7 +261,7 @@ class Jobs extends Component {
   }
 
   onRenderJobsStatus = () => {
-    const {apiJobsStatus} = this.State
+    const {apiJobsStatus} = this.state
 
     switch (apiJobsStatus) {
       case apiJobsStatusConstants.success:
@@ -342,7 +342,7 @@ class Jobs extends Component {
             {this.onGetRadioButtonView()}
           </div>
           <div className="jobs-container">
-            <div>
+            <div className="search-input-container">
               <input
                 className="search-input"
                 type="search"
